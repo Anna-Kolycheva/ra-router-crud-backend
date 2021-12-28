@@ -14,7 +14,6 @@ app.use(
     allowMethods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
-
 app.use(async (ctx, next) => {
   ctx.response.set(
     "Access-Control-Allow-Origin",
